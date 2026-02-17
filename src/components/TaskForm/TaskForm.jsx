@@ -12,7 +12,9 @@ const TaskForm = () => {
         value={newTaskText}
         onChange={handleChange}
       />
-      <button type='submit'>Добавить</button>
+      <button disabled={newTaskText === ''} type='submit'>
+        Добавить
+      </button>
     </form>
   );
 };
